@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-36",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 112.0, 303.0, 61.0, 22.0 ],
+					"text" : "del 10000"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-43",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -69,8 +81,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 119.5, 303.0, 63.0, 22.0 ],
-					"text" : "closebang"
+					"patching_rect" : [ 132.0, 274.0, 58.0, 22.0 ],
+					"text" : "loadbang"
 				}
 
 			}
@@ -632,7 +644,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 57.0, 133.0, 566.0, 480.0 ],
+						"rect" : [ 57.0, 82.0, 566.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -750,7 +762,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "int", "" ],
-									"patching_rect" : [ 143.0, 418.0, 87.0, 22.0 ],
+									"patching_rect" : [ 143.0, 418.0, 91.0, 22.0 ],
 									"text" : "serial f 115200"
 								}
 
@@ -787,7 +799,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 349.0, 317.0, 124.0, 22.0 ],
-									"text" : "10 10 10 10 10"
+									"text" : "10 64 10 10 196"
 								}
 
 							}
@@ -1012,6 +1024,8 @@
 					}
 ,
 					"patching_rect" : [ 913.0, 870.0, 48.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 983.4375, 357.0, 48.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -5816,7 +5830,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-43", 0 ],
+					"destination" : [ "obj-36", 0 ],
 					"source" : [ "obj-33", 0 ]
 				}
 
@@ -5841,6 +5855,13 @@
 					"hidden" : 1,
 					"midpoints" : [ 32.5, 373.030914306640625, 34.375, 373.030914306640625 ],
 					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-43", 0 ],
+					"source" : [ "obj-36", 0 ]
 				}
 
 			}
@@ -6112,10 +6133,10 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-7" : [ "live.drop", "live.drop", 0 ],
 			"obj-191" : [ "amxd~", "amxd~", 0 ],
-			"obj-194" : [ "Reverb", "Reverb", 0 ],
 			"obj-21" : [ "MasterVolume", "Master Volume", 0 ],
+			"obj-194" : [ "Reverb", "Reverb", 0 ],
+			"obj-7" : [ "live.drop", "live.drop", 0 ],
 			"parameterbanks" : 			{
 
 			}
