@@ -39,6 +39,91 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-107",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 550.0, 665.06182861328125, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-105",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 647.0, 743.0, 45.0, 22.0 ],
+					"presentation_linecount" : 2,
+					"text" : "1 1000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-104",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 566.0, 743.0, 55.0, 22.0 ],
+					"text" : "0.1 1000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-97",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "bang" ],
+					"patching_rect" : [ 566.0, 792.0, 44.0, 22.0 ],
+					"text" : "line~ 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-88",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "bang", "" ],
+					"patching_rect" : [ 550.0, 691.06182861328125, 44.0, 22.0 ],
+					"text" : "sel 1 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-87",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 550.0, 632.06182861328125, 45.0, 22.0 ],
+					"text" : "r sleep"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-86",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "multichannelsignal" ],
+					"patching_rect" : [ 27.875, 846.0, 77.0, 22.0 ],
+					"text" : "mc.*~ 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-36",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -644,7 +729,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 57.0, 82.0, 566.0, 480.0 ],
+						"rect" : [ 34.0, 78.0, 1372.0, 788.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -673,25 +758,241 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-15",
+									"id" : "obj-66",
 									"maxclass" : "newobj",
-									"numinlets" : 3,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 268.0, 283.0, 67.0, 22.0 ],
-									"text" : "clip 10 255"
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "bang" ],
+									"patching_rect" : [ 710.0, 83.0, 363.0, 22.0 ],
+									"text" : "t b b"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-14",
+									"id" : "obj-65",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1055.0, 122.0, 29.5, 22.0 ],
+									"text" : "500"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-55",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"patching_rect" : [ 999.0, 184.0, 40.0, 22.0 ],
+									"text" : "line"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-54",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"patching_rect" : [ 925.0, 184.0, 40.0, 22.0 ],
+									"text" : "line"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-53",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"patching_rect" : [ 853.0, 184.0, 40.0, 22.0 ],
+									"text" : "line"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-52",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"patching_rect" : [ 782.0, 184.0, 40.0, 22.0 ],
+									"text" : "line"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-51",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"patching_rect" : [ 710.0, 184.0, 40.0, 22.0 ],
+									"text" : "line"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-38",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "" ],
-									"patching_rect" : [ 178.0, 48.0, 34.0, 22.0 ],
+									"patching_rect" : [ 578.0, 95.0, 34.0, 22.0 ],
 									"text" : "sel 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-32",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 614.0, 95.0, 29.5, 22.0 ],
+									"text" : "+ 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-31",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 268.0, 307.0, 52.0, 22.0 ],
+									"text" : "gate 2 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-30",
+									"maxclass" : "newobj",
+									"numinlets" : 5,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 710.0, 222.0, 307.0, 22.0 ],
+									"text" : "pack i i i i i"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-29",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 710.0, 338.0, 91.0, 22.0 ],
+									"text" : "vexpr $i1 + $i2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-28",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 978.0, 122.0, 65.0, 22.0 ],
+									"text" : "drunk 50 3"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-27",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 911.0, 122.0, 65.0, 22.0 ],
+									"text" : "drunk 50 2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-26",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 844.0, 122.0, 65.0, 22.0 ],
+									"text" : "drunk 50 3"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-25",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 777.0, 122.0, 65.0, 22.0 ],
+									"text" : "drunk 50 2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-23",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 710.0, 49.0, 76.0, 22.0 ],
+									"text" : "qmetro 1000"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-22",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 710.0, 122.0, 65.0, 22.0 ],
+									"text" : "drunk 50 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 782.0, 288.0, 173.0, 22.0 ],
+									"text" : "vexpr $f1 * 0.2 @scalarmode 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-15",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 268.0, 374.0, 67.0, 22.0 ],
+									"text" : "clip 10 255"
 								}
 
 							}
@@ -702,7 +1003,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 268.0, 351.0, 25.0, 22.0 ],
+									"patching_rect" : [ 268.0, 453.0, 25.0, 22.0 ],
 									"text" : "iter"
 								}
 
@@ -714,7 +1015,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "list" ],
-									"patching_rect" : [ 268.0, 322.0, 56.0, 22.0 ],
+									"patching_rect" : [ 268.0, 419.0, 56.0, 22.0 ],
 									"text" : "listfunnel"
 								}
 
@@ -750,7 +1051,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 210.0, 353.0, 32.0, 22.0 ],
+									"patching_rect" : [ 79.0, 453.0, 32.0, 22.0 ],
 									"text" : "print"
 								}
 
@@ -762,7 +1063,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "int", "" ],
-									"patching_rect" : [ 143.0, 418.0, 91.0, 22.0 ],
+									"patching_rect" : [ 138.0, 516.0, 91.0, 22.0 ],
 									"text" : "serial f 115200"
 								}
 
@@ -774,7 +1075,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 178.0, 11.0, 45.0, 22.0 ],
+									"patching_rect" : [ 614.0, 42.0, 45.0, 22.0 ],
 									"text" : "r sleep"
 								}
 
@@ -788,18 +1089,6 @@
 									"outlettype" : [ "bang", "" ],
 									"patching_rect" : [ 305.0, 66.0, 29.5, 22.0 ],
 									"text" : "t b l"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-38",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 349.0, 317.0, 124.0, 22.0 ],
-									"text" : "10 64 10 10 196"
 								}
 
 							}
@@ -883,7 +1172,24 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-14", 0 ],
+									"destination" : [ "obj-23", 0 ],
+									"order" : 0,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-32", 0 ],
+									"order" : 1,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-38", 0 ],
+									"order" : 2,
 									"source" : [ "obj-1", 0 ]
 								}
 
@@ -918,23 +1224,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-35", 0 ],
-									"source" : [ "obj-14", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-11", 0 ],
-									"order" : 1,
-									"source" : [ "obj-15", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-38", 1 ],
-									"order" : 0,
 									"source" : [ "obj-15", 0 ]
 								}
 
@@ -943,6 +1233,85 @@
 								"patchline" : 								{
 									"destination" : [ "obj-43", 0 ],
 									"source" : [ "obj-19", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-51", 0 ],
+									"source" : [ "obj-22", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-66", 0 ],
+									"source" : [ "obj-23", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-52", 0 ],
+									"source" : [ "obj-25", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-53", 0 ],
+									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-54", 0 ],
+									"source" : [ "obj-27", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-55", 0 ],
+									"source" : [ "obj-28", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-15", 0 ],
+									"source" : [ "obj-29", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-29", 0 ],
+									"source" : [ "obj-30", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-15", 0 ],
+									"source" : [ "obj-31", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"midpoints" : [ 310.5, 339.0, 699.0, 339.0, 699.0, 277.0, 791.5, 277.0 ],
+									"source" : [ "obj-31", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-31", 0 ],
+									"midpoints" : [ 623.5, 293.5, 277.5, 293.5 ],
+									"source" : [ "obj-32", 0 ]
 								}
 
 							}
@@ -964,8 +1333,16 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-15", 0 ],
+									"destination" : [ "obj-31", 1 ],
 									"source" : [ "obj-36", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-36", 0 ],
+									"midpoints" : [ 587.5, 166.0, 277.5, 166.0 ],
+									"source" : [ "obj-38", 0 ]
 								}
 
 							}
@@ -987,6 +1364,135 @@
 								"patchline" : 								{
 									"destination" : [ "obj-13", 0 ],
 									"source" : [ "obj-43", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-29", 1 ],
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-30", 0 ],
+									"source" : [ "obj-51", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-30", 1 ],
+									"source" : [ "obj-52", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-30", 2 ],
+									"source" : [ "obj-53", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-30", 3 ],
+									"source" : [ "obj-54", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-30", 4 ],
+									"source" : [ "obj-55", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-51", 1 ],
+									"order" : 4,
+									"source" : [ "obj-65", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-52", 1 ],
+									"order" : 3,
+									"source" : [ "obj-65", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-53", 1 ],
+									"order" : 2,
+									"source" : [ "obj-65", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-54", 1 ],
+									"order" : 1,
+									"source" : [ "obj-65", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-55", 1 ],
+									"order" : 0,
+									"source" : [ "obj-65", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-22", 0 ],
+									"order" : 4,
+									"source" : [ "obj-66", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-25", 0 ],
+									"order" : 3,
+									"source" : [ "obj-66", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-26", 0 ],
+									"order" : 2,
+									"source" : [ "obj-66", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-27", 0 ],
+									"order" : 1,
+									"source" : [ "obj-66", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-28", 0 ],
+									"order" : 0,
+									"source" : [ "obj-66", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-65", 0 ],
+									"source" : [ "obj-66", 1 ]
 								}
 
 							}
@@ -1685,7 +2191,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-91",
-									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
@@ -1698,7 +2203,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-90",
-									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
@@ -1711,7 +2215,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-89",
-									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
@@ -3445,7 +3948,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 59.0, 103.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3651,14 +4154,14 @@
 					"presentation_rect" : [ 665.472412109375, 267.4124755859375, 100.0, 130.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "Master Volume",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_linknames" : 1,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "MasterVolume",
 							"parameter_mmax" : 6.0,
-							"parameter_initial" : [ 0.0 ],
-							"parameter_shortname" : "Master Volume"
+							"parameter_initial" : [ 0.0 ]
 						}
 
 					}
@@ -3718,11 +4221,11 @@
 					"presentation_rect" : [ 769.597412109375, 298.4124755859375, 175.0, 99.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "live.drop",
 							"parameter_type" : 4,
 							"parameter_longname" : "live.drop",
 							"parameter_invisible" : 1,
-							"parameter_initial" : [ "" ],
-							"parameter_shortname" : "live.drop"
+							"parameter_initial" : [ "" ]
 						}
 
 					}
@@ -3800,11 +4303,11 @@
 					"presentation_rect" : [ 674.472412109375, 206.4124755859375, 82.0, 59.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "Reverb",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Reverb",
-							"parameter_shortname" : "Reverb"
+							"parameter_longname" : "Reverb"
 						}
 
 					}
@@ -3846,7 +4349,7 @@
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 1,
 						"patchername" : "Convolution Reverb.amxd",
-						"patchername_fallback" : "~/Documents/GitHub/PolyPlato/Convolution Reverb.amxd"
+						"patchername_fallback" : "~/_LAVORI/StylNove/PolyPlato/Convolution Reverb.amxd"
 					}
 ,
 					"snapshot" : 					{
@@ -3860,7 +4363,7 @@
 						"embed" : 1,
 						"snapshot" : 						{
 							"name" : "Convolution Reverb.amxd",
-							"origname" : "~/Documents/GitHub/PolyPlato/Convolution Reverb.amxd",
+							"origname" : "~/_LAVORI/StylNove/PolyPlato/Convolution Reverb.amxd",
 							"valuedictionary" : 							{
 								"parameter_values" : 								{
 									"Dry/Wet" : 100.0,
@@ -3880,7 +4383,7 @@
 									"Width" : 19.685039370078727,
 									"blob" : 									{
 										"Decay" : [ 100.0 ],
-										"Drop A" : [ "C:/Users/LattePanda/Documents/GitHub/PolyPlato/IRs/01 Real Places/York Minster Cathedral.aif" ],
+										"Drop A" : [ "HD:/Users/luca/_LAVORI/StylNove/PolyPlato/IRs/01 Real Places/York Minster Cathedral.aif" ],
 										"PersistenceA" : [ "" ],
 										"PersistenceB" : [ "" ],
 										"PersistenceC" : [ "" ],
@@ -3906,7 +4409,7 @@
 									"embed" : 0,
 									"snapshot" : 									{
 										"name" : "Convolution Reverb.amxd",
-										"origname" : "~/Documents/GitHub/PolyPlato/Convolution Reverb.amxd",
+										"origname" : "~/_LAVORI/StylNove/PolyPlato/Convolution Reverb.amxd",
 										"valuedictionary" : 										{
 											"parameter_values" : 											{
 												"Dry/Wet" : 100.0,
@@ -3926,7 +4429,7 @@
 												"Width" : 19.685039370078727,
 												"blob" : 												{
 													"Decay" : [ 100.0 ],
-													"Drop A" : [ "C:/Users/LattePanda/Documents/GitHub/PolyPlato/IRs/01 Real Places/York Minster Cathedral.aif" ],
+													"Drop A" : [ "HD:/Users/luca/_LAVORI/StylNove/PolyPlato/IRs/01 Real Places/York Minster Cathedral.aif" ],
 													"PersistenceA" : [ "" ],
 													"PersistenceB" : [ "" ],
 													"PersistenceC" : [ "" ],
@@ -3944,7 +4447,7 @@
 										"filename" : "Convolution Reverb.amxd.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "c0a36fe7fe8f1e5f7559fccb92c3e870"
+										"snapshotfileid" : "7e48fccdeafa1c93d0457644ec1b0621"
 									}
 
 								}
@@ -4019,59 +4522,6 @@
 									}
 
 								}
-, 								{
-									"filetype" : "C74Snapshot",
-									"version" : 2,
-									"minorversion" : 0,
-									"name" : "Convolution Reverb.amxd[2]",
-									"origin" : "Convolution Reverb.amxd",
-									"type" : "amxd",
-									"subtype" : "Undefined",
-									"embed" : 0,
-									"snapshot" : 									{
-										"name" : "Convolution Reverb.amxd",
-										"origname" : "~/Documents/GitHub/PolyPlato/Convolution Reverb.amxd",
-										"valuedictionary" : 										{
-											"parameter_values" : 											{
-												"Dry/Wet" : 100.0,
-												"EQ Band" : 0.0,
-												"EQ Hi Freq" : 11153.409067301989126,
-												"EQ Hi Gain" : 16.252252252252262,
-												"EQ Hi Gain[1]" : 1.0,
-												"EQ Hi S" : 1.0,
-												"EQ Lo Freq" : 4519.371734054848275,
-												"EQ Lo Gain" : 0.0,
-												"EQ Lo S" : 1.0,
-												"EQ Mid Freq" : 8691.717025163834478,
-												"EQ Mid Gain" : 0.0,
-												"EQ Mid Q" : 0.71,
-												"Gain" : 0.0,
-												"Predelay" : 0.0,
-												"Width" : 100.0,
-												"blob" : 												{
-													"Decay" : [ 100.0 ],
-													"Drop A" : [ "C:/Users/LattePanda/Documents/GitHub/PolyPlato/IRs/01 Real Places/York Minster Cathedral.aif" ],
-													"PersistenceA" : [ "" ],
-													"PersistenceB" : [ "" ],
-													"PersistenceC" : [ "" ],
-													"Size" : [ 100.0 ]
-												}
-
-											}
-
-										}
-
-									}
-,
-									"fileref" : 									{
-										"name" : "Convolution Reverb.amxd[2]",
-										"filename" : "Convolution Reverb.amxd[2].maxsnap",
-										"filepath" : "~/Documents/Max 8/Snapshots",
-										"filepos" : -1,
-										"snapshotfileid" : "ae270b442c191455e2088498f804d235"
-									}
-
-								}
  ]
 						}
 
@@ -4101,7 +4551,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 27.875, 852.06182861328125, 42.0, 22.0 ],
+					"patching_rect" : [ 27.875, 796.06182861328125, 42.0, 22.0 ],
 					"text" : "mc.+~"
 				}
 
@@ -4197,7 +4647,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 297.875, 116.29833984375, 121.0, 22.0 ],
+									"patching_rect" : [ 297.875, 116.29833984375, 119.0, 35.0 ],
 									"text" : "value slideTime 2000"
 								}
 
@@ -4210,7 +4660,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 169.75, 171.29833984375, 91.0, 22.0 ],
+									"patching_rect" : [ 169.75, 171.29833984375, 89.0, 35.0 ],
 									"text" : "value slideTime"
 								}
 
@@ -4223,7 +4673,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 76.75, 171.29833984375, 91.0, 22.0 ],
+									"patching_rect" : [ 76.75, 171.29833984375, 89.0, 35.0 ],
 									"text" : "value slideTime"
 								}
 
@@ -5076,7 +5526,7 @@
 								"embed" : 1,
 								"snapshot" : 								{
 									"name" : "Convolution Reverb.amxd",
-									"origname" : "~/Documents/GitHub/PolyPlato/Convolution Reverb.amxd",
+									"origname" : "~/_LAVORI/StylNove/PolyPlato/Convolution Reverb.amxd",
 									"valuedictionary" : 									{
 										"parameter_values" : 										{
 											"Dry/Wet" : 100.0,
@@ -5096,7 +5546,7 @@
 											"Width" : 19.685039370078727,
 											"blob" : 											{
 												"Decay" : [ 100.0 ],
-												"Drop A" : [ "C:/Users/LattePanda/Documents/GitHub/PolyPlato/IRs/01 Real Places/York Minster Cathedral.aif" ],
+												"Drop A" : [ "HD:/Users/luca/_LAVORI/StylNove/PolyPlato/IRs/01 Real Places/York Minster Cathedral.aif" ],
 												"PersistenceA" : [ "" ],
 												"PersistenceB" : [ "" ],
 												"PersistenceC" : [ "" ],
@@ -5111,7 +5561,7 @@
 
 							}
  ],
-						"live.drop" : [ "C:/Users/LattePanda/Documents/GitHub/PolyPlato/Waves" ]
+						"live.drop" : [ "HD:/Users/luca/_LAVORI/StylNove/PolyPlato/Waves" ]
 					}
 ,
 					"text" : "autopattr polyPlato",
@@ -5409,6 +5859,27 @@
 				"patchline" : 				{
 					"destination" : [ "obj-102", 0 ],
 					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-97", 0 ],
+					"source" : [ "obj-104", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-97", 0 ],
+					"source" : [ "obj-105", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-88", 0 ],
+					"source" : [ "obj-107", 0 ]
 				}
 
 			}
@@ -5756,7 +6227,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-99", 1 ],
-					"midpoints" : [ 167.0, 1007.061767578125, 137.6875, 1007.061767578125, 137.6875, 841.061767578125, 60.375, 841.061767578125 ],
+					"midpoints" : [ 167.0, 1007.061767578125, 137.6875, 1007.061767578125, 137.6875, 786.061767578125, 60.375, 786.061767578125 ],
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -6102,6 +6573,34 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-86", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-107", 0 ],
+					"source" : [ "obj-87", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-104", 0 ],
+					"source" : [ "obj-88", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-105", 0 ],
+					"source" : [ "obj-88", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-85", 0 ],
 					"source" : [ "obj-9", 1 ]
 				}
@@ -6126,17 +6625,25 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
+					"destination" : [ "obj-86", 1 ],
+					"midpoints" : [ 575.5, 738.5, 95.375, 738.5 ],
+					"source" : [ "obj-97", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-86", 0 ],
 					"source" : [ "obj-99", 0 ]
 				}
 
 			}
  ],
 		"parameters" : 		{
-			"obj-191" : [ "amxd~", "amxd~", 0 ],
+			"obj-7" : [ "live.drop", "live.drop", 0 ],
 			"obj-21" : [ "MasterVolume", "Master Volume", 0 ],
 			"obj-194" : [ "Reverb", "Reverb", 0 ],
-			"obj-7" : [ "live.drop", "live.drop", 0 ],
+			"obj-191" : [ "amxd~", "amxd~", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -6144,30 +6651,16 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "PolyPlato.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "Convolution Reverb.amxd.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../Max 8/Snapshots",
+				"patcherrelativepath" : "../../../Documents/Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Convolution Reverb.amxd[1].maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Convolution Reverb.amxd[2].maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../Max 8/Snapshots",
+				"patcherrelativepath" : "../../../Documents/Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
@@ -6178,114 +6671,80 @@
 			}
 , 			{
 				"name" : "platoVoice.maxpat",
-				"bootpath" : "~/Documents/GitHub/PolyPlato",
+				"bootpath" : "~/_LAVORI/StylNove/PolyPlato",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "euclideanVoice.maxpat",
-				"bootpath" : "~/Documents/GitHub/PolyPlato",
+				"bootpath" : "~/_LAVORI/StylNove/PolyPlato",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "11euclidean.maxpat",
-				"bootpath" : "~/Documents/GitHub/PolyPlato",
+				"bootpath" : "~/_LAVORI/StylNove/PolyPlato",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "waveVoice.maxpat",
-				"bootpath" : "~/Documents/GitHub/PolyPlato",
+				"bootpath" : "~/_LAVORI/StylNove/PolyPlato",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "targetMaker.maxpat",
-				"bootpath" : "~/Documents/GitHub/PolyPlato",
+				"bootpath" : "~/_LAVORI/StylNove/PolyPlato",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "osc_translator.maxpat",
-				"bootpath" : "~/Documents/GitHub/PolyPlato",
+				"bootpath" : "~/_LAVORI/StylNove/PolyPlato",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "spectrumdraw~.mxe64",
-				"type" : "mx64"
+				"name" : "spectrumdraw~.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "iraverage~.mxe64",
-				"type" : "mx64"
+				"name" : "iraverage~.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "recursivefolder.mxe64",
-				"type" : "mx64"
+				"name" : "recursivefolder.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "irdisplay~.mxe64",
-				"type" : "mx64"
+				"name" : "irdisplay~.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "morphfilter~.mxe64",
-				"type" : "mx64"
+				"name" : "morphfilter~.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "irstats~.mxe64",
-				"type" : "mx64"
+				"name" : "irstats~.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "bufresample~.mxe64",
-				"type" : "mx64"
+				"name" : "bufresample~.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "multiconvolve~.mxe64",
-				"type" : "mx64"
+				"name" : "multiconvolve~.mxo",
+				"type" : "iLaX"
 			}
  ],
-		"autosave" : 0,
-		"snapshot" : 		{
-			"filetype" : "C74Snapshot",
-			"version" : 2,
-			"minorversion" : 0,
-			"name" : "snapshotlist",
-			"origin" : "jpatcher",
-			"type" : "list",
-			"subtype" : "Undefined",
-			"embed" : 1,
-			"snapshotlist" : 			{
-				"current_snapshot" : -1,
-				"entries" : [ 					{
-						"filetype" : "C74Snapshot",
-						"version" : 2,
-						"minorversion" : 0,
-						"name" : "PolyPlato",
-						"origin" : "PolyPlato",
-						"type" : "patcher",
-						"subtype" : "Undefined",
-						"embed" : 0,
-						"fileref" : 						{
-							"name" : "PolyPlato",
-							"filename" : "PolyPlato.maxsnap",
-							"filepath" : "~/Documents/Max 8/Snapshots",
-							"filepos" : -1,
-							"snapshotfileid" : "8b276c51ba440fc8d3badc794bbcb47b"
-						}
-
-					}
- ]
-			}
-
-		}
-
+		"autosave" : 0
 	}
 
 }
