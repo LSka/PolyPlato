@@ -878,7 +878,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-16",
@@ -4315,14 +4314,14 @@
 					"presentation_rect" : [ 665.472412109375, 267.4124755859375, 100.0, 130.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 6.0,
-							"parameter_initial" : [ 0.0 ],
-							"parameter_shortname" : "Master Volume",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_linknames" : 1,
 							"parameter_mmin" : -70.0,
-							"parameter_longname" : "MasterVolume"
+							"parameter_longname" : "MasterVolume",
+							"parameter_mmax" : 6.0,
+							"parameter_initial" : [ 0.0 ],
+							"parameter_shortname" : "Master Volume"
 						}
 
 					}
@@ -4382,11 +4381,11 @@
 					"presentation_rect" : [ 769.597412109375, 298.4124755859375, 175.0, 99.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_type" : 4,
+							"parameter_longname" : "live.drop",
 							"parameter_invisible" : 1,
 							"parameter_initial" : [ "" ],
-							"parameter_shortname" : "live.drop",
-							"parameter_type" : 4,
-							"parameter_longname" : "live.drop"
+							"parameter_shortname" : "live.drop"
 						}
 
 					}
@@ -4464,11 +4463,11 @@
 					"presentation_rect" : [ 674.472412109375, 206.4124755859375, 82.0, 59.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Reverb",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "Reverb"
+							"parameter_longname" : "Reverb",
+							"parameter_shortname" : "Reverb"
 						}
 
 					}
@@ -6873,10 +6872,10 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-191" : [ "amxd~", "amxd~", 0 ],
 			"obj-21" : [ "MasterVolume", "Master Volume", 0 ],
 			"obj-7" : [ "live.drop", "live.drop", 0 ],
 			"obj-194" : [ "Reverb", "Reverb", 0 ],
+			"obj-191" : [ "amxd~", "amxd~", 0 ],
 			"parameterbanks" : 			{
 
 			}
